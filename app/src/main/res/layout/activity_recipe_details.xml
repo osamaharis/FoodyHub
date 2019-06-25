@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".recipe_details">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:cardBackgroundColor="#fff"
+        app:cardCornerRadius="3dp"
+        app:cardElevation="4dp"
+        app:cardUseCompatPadding="true"
+        app:contentPadding="5dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="237dp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/Imageview"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:adjustViewBounds="true"
+
+
+                android:scaleType="centerCrop" />
+            <TextView
+                android:id="@+id/Recipename"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="serif"
+                android:text="Recipe Name"
+                android:textAlignment="center"
+                android:textColor="#000"
+                android:textSize="20dp" />
+            <!--<TextView-->
+            <!--android:id="@+id/detail"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="Read more........"-->
+            <!--android:textColor="#000"-->
+            <!--android:textSize="15dp"-->
+            <!--android:fontFamily="serif"-->
+            <!--android:textAlignment="textStart"/>-->
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+    <LinearLayout
+
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <TextView
+            android:freezesText="true"
+
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/imageview"
+            android:id="@+id/Rec_detail"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:text="Read more........"
+
+            android:textColor="#000"
+            android:textSize="15dp"
+            android:fontFamily="serif"
+            android:textAlignment="textStart"/>
+
+    </LinearLayout>
+</LinearLayout>
